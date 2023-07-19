@@ -9,3 +9,7 @@ body {
 .border-teste {
   border: 1px solid red
 }
+
+.content-tag-end {
+  content: '</>';
+} 
