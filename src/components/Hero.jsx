@@ -2,39 +2,38 @@
 import Image from 'next/image'
 import { hero } from '../../public/assets'
 import { motion } from 'framer-motion';
+import { IoLogoLinkedin, IoLogoGithub } from 'react-icons/io'
+import Button from './Button'
 
 
 const Hero = () => {
 
   return (
-    <>
-      <div className="w-full text-beige flex items-center justify-center flex-col gap-6 min-h-[600px]">
-        <div className='text-xl flex items-center justify-center w-full font-bold md:text-8xl sm:text-4xl'>
-          <h1 className='flex-1 text-end'>DEV</h1>
-          <motion.div
-            initial={{ width: 0 }}
-            animate={{ width: 'auto' }}
-            transition={{ duration: 1 }}
-            className='flex items-center justify-center max-w-[200px]'
-          >
-          <Image src={hero} alt="Foto" width={400} height={400}/>  
+    <section className='flex items-center justify-center flex-col section relative lg:flex-row-reverse lg:gap-12 min-h-screen'>
+      <figure className='max-w-[600px] w-full lg:flex-1'>
+        <Image src={hero} alt="Emoji do Desenvolvedor" width={600} height={600} className='relative bottom-6'/>
+      </figure>
+      <div className='md:py-6 lg:flex-1'>
+        <h2 className='text-xl font-bold text-accent-500'>DEV FRONT-END</h2>
+        <h1 className='text-3xl md:text-5xl lg:py-4 font-bold text-secondary-500'>Israel Humberto</h1>
+        <h4 className='text-beige my-3'>Olá, pesssoal. Sejam bem vindos ao meu portifólio. Aqui você pode conhecer um pouco mais de mim e dos meus projetos!</h4>
 
-          </motion.div>
-          <h1 className='flex-1'>RAEL</h1>
+        {/* BOTOES */}
+        <div className='flex flex-col gap-3 py-3 md:flex-row lg:max-w-[450px]'>
+          <Button type='primary' href='#' className='flex-auto'>Projetos</Button>
+          <Button type='secondary' href='#' className='flex-auto'>Currículo</Button>
         </div>
-
-        <p className='w-full text-center lg:w-4/5'>Olá, meu nome é <strong>Israel Humberto</strong>, eu sou desenvolvedor Front-end e aqui você pode conhecer um pouco mais de mim e dos meus projetos!</p>
       </div>
 
-      {/* TAGS BACKGROUND */}
-      <div className='absolute bottom-0 right-0 font-bold text-green-300 opacity-30 text-6xl'>
-        &lt;/&gt;
+      <div className='relative flex my-3 gap-2 lg:absolute lg:bottom-1/2 lg:flex-col lg:-left-12 lg:translate-y-1/2 lgl:-left-16'>
+        <a href="">
+          <IoLogoGithub fontSize={32} color='#d9a439'/>
+        </a>
+        <a href="">
+          <IoLogoLinkedin fontSize={32} color='#d9a439'/>
+        </a>
       </div>
-      <div className='absolute top-6 left-0 font-bold text-green-300 opacity-30 text-6xl'>
-        &lt;&gt;
-      </div>
-      {/* END TAGS BACKGROUND */}
-    </>
+    </section>
   );
 };
 

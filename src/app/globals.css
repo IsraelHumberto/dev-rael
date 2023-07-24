@@ -13,3 +13,14 @@ body {
 .content-tag-end {
   content: '</>';
 } 
+
+.section {
+  padding: 1rem 0;
+  
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 6rem 0;
+  }
+}
