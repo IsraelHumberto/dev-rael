@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '600'] })
 const hind = Hind({ subsets: ['latin'], weight: ['300', '400', '600'] })
 
-import '@/components/FontAwesome'
 
 export const metadata = {
   title: 'Portfolio - Dev Rael',
