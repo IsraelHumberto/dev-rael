@@ -16,6 +16,10 @@ module.exports = {
           '2xl': '6rem',
         },
       },
+      fontFamily: {
+        body: ['hind', 'sans-serif'],
+        heading: ['montserrat', 'sans-serif']
+      },
       colors: {
         primary: {
           300: '#006077',

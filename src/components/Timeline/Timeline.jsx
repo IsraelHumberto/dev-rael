@@ -3,9 +3,9 @@ import Side from './Side'
 
 const Timeline = () => {
   return (
-    <div class="section sml:max-w-[800px] w-full h-full mx-auto">
-      <div class="relative wrap overflow-hidden h-full">
-        <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border sml:left-1/2 left-[20px]"></div>
+    <div className="lg:container lg:mx-auto section sml:max-w-[800px] w-full h-full mx-auto">
+      <div className="relative wrap overflow-hidden h-full">
+        <div className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border sml:left-1/2 left-[20px]"></div>
           <Side 
             index={1} 
             year='2009-2010' 
@@ -37,3 +37,4 @@ const Timeline = () => {
 }
 
 export default Timeline
+
