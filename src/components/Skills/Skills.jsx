@@ -36,7 +36,7 @@ const Skills = ({ data }) => {
   return (
     <section className='bg-secondary-500 w-full'>
       <div className='lg:container lg:mx-auto section w-full'>
-        <h2 className='text-center font-bold mb-6 text-2xl font-heading text-primary-500'>{title}</h2>
+        <h2 className='text-center font-bold mb-6 text-3xl font-heading text-primary-500'>{title}</h2>
 
         <div className='flex gap-2 w-full justify-center flex-wrap'>
           {/* <Slider {...settings}> */}

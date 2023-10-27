@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section className='lg:container lg:mx-auto section flex items-center justify-center flex-col  relative lg:flex-row-reverse lg:gap-12 min-h-screen'>
       <figure className='max-w-[600px] w-full lg:flex-1'>
-        <Image src={hero} alt="Emoji do Desenvolvedor" width={600} height={600} className='relative bottom-6'/>
+        <Image src={hero} alt="Emoji do Desenvolvedor" width={600} height={600} className='relative bottom-6' />
       </figure>
       <div className='md:py-6 lg:flex-1'>
         <h2 className='text-xl font-bold text-accent-500 font-heading'>DEV FRONT-END</h2>
@@ -26,11 +26,11 @@ const Hero = () => {
       </div>
 
       <div className='relative flex my-3 gap-2 lg:absolute lg:bottom-1/2 lg:flex-col lg:-left-0 lg:translate-y-1/2'>
-        <a href="">
-          <IoLogoGithub fontSize={32} color='#d9a439'/>
+        <a href="" target='_blank'>
+          <IoLogoGithub fontSize={32} color='#d9a439' />
         </a>
-        <a href="">
-          <IoLogoLinkedin fontSize={32} color='#d9a439'/>
+        <a href="" target='_blank'>
+          <IoLogoLinkedin fontSize={32} color='#d9a439' />
         </a>
       </div>
     </section>

@@ -1,6 +1,7 @@
 import Skills from '@/components/Skills/Skills'
 import Hero from '../components/Hero'
 import Timeline from '../components/Timeline/Timeline'
+import HighlightsProjects from '../components/HighlightsProjects'
 import Head from 'next/head'
 import { createClient } from '../prismicio'
 
@@ -17,7 +18,7 @@ export default async function Home() {
         <Hero />
         <Skills data={skills.data} />
         <Timeline />
-
+        <HighlightsProjects />
       </main>
     </>
   )

@@ -1,0 +1,52 @@
+export const projectsSection = {
+  title: "Projects",
+  titleColor: "",
+  subtitle: "Porjetos desenvolvidos por mim",
+  subtitleColor: "",
+  backgroundColor: "",
+  projects: [
+    {
+      id: 1,
+      name: "Projeto 1",
+      description:
+        "bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla",
+      link: "#",
+      images: [],
+      tags: [
+        "react",
+        "javascript",
+        "typescript",
+        "react",
+        "javascript",
+        "typescript",
+        "react",
+        "javascript",
+        "typescript",
+      ],
+    },
+    {
+      id: 2,
+      name: "Projeto 2",
+      description: "bla bla bla bla bla bla bla bla bla",
+      link: "#",
+      images: [],
+      tags: ["react", "javascript", "react", "javascript", "typescript"],
+    },
+    {
+      id: 3,
+      name: "Projeto 3",
+      description: "bla bla bla bla bla bla bla bla bla",
+      link: "#",
+      images: [],
+      tags: ["react", "javascript"],
+    },
+    {
+      id: 4,
+      name: "Projeto 4",
+      description: "bla bla bla bla bla bla bla bla bla",
+      link: "#",
+      images: [],
+      tags: ["react", "javascript"],
+    },
+  ],
+};

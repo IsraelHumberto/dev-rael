@@ -2,21 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-    color: #fefefe;
+  color: #fefefe;
 }
 
 .border-teste {
-  border: 1px solid red
+  border: 1px solid red;
 }
 
 .content-tag-end {
-  content: '</>';
-} 
+  content: "</>";
+}
 
 .section {
   padding: 3rem 1rem;
+}
+
+.columns-projects {
+  column-count: 2;
+  column-gap: 8px;
 }
 
 @media screen and (min-width: 768px) {
