@@ -1,24 +1,12 @@
 'use client'
 import Image from "next/image"
 import { projectsSection } from "@/utils/projectsSection"
-import Modal from 'react-modal';
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { ProjectContext } from "./context";
 
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-    color: '#fff',
-    backgroundColor: '#00333f'
-  },
-};
 
 const Project = ({ project }) => {
-  const [modalIsOpen, setModalIsOpen] = useState(false)
+  const { asideIsOpen, setAsideIsOpen, setInfoAside } = useContext(ProjectContext)
 
 
   function openModal() {
@@ -29,9 +17,14 @@ const Project = ({ project }) => {
     setModalIsOpen(false);
   }
 
+  const sendInfoAside = (project) => {
+    setInfoAside(project)
+    setAsideIsOpen(true);
+  }
+
   return (
     <>
-      <div className=" mb-2 rounded-md relative group/project hover:fade-in-infos cursor-pointer" onClick={openModal}>
+      <div className=" mb-2 rounded-md relative group/project hover:fade-in-infos cursor-pointer" onClick={() => sendInfoAside(project)}>
         <Image src="https://images.pexels.com/photos/13884280/pexels-photo-13884280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width={500} height={500} className="w-full rounded-md" alt="akdjkal" />
         <div className="flex flex-wrap gap-1 absolute bottom-0 bg-gray-700 p-2 bg-opacity-50 w-full rounded-b group-hover/project:fade-in-infos">
 
@@ -40,7 +33,7 @@ const Project = ({ project }) => {
           ))}
         </div>
       </div>
-      {modalIsOpen &&
+      {/* {modalIsOpen &&
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
@@ -53,7 +46,8 @@ const Project = ({ project }) => {
           </div>
 
         </Modal>
-      }
+        <Aside />
+      } */}
     </>
   )
 }

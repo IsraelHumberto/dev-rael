@@ -1,4 +1,6 @@
 import Project from "@/components/Project/Project"
+import ProviderProjects from "@/components/Project/ProviderProjects"
+import { ProjectContext } from "@/components/Project/context"
 import { projectsSection } from "@/utils/projectsSection"
 import Image from "next/image"
 
@@ -7,7 +9,7 @@ export default async function Projetos() {
 
   return (
     <>
-      <main className="w-full relative">
+      <main className="w-full relative projects-page">
         <div className='lg:container lg:mx-auto section w-full '>
           {/* <div className="grid gap-8 mb-6 lg:mb-16 xl:grid-cols-2 place-content-center">
 
@@ -40,11 +42,7 @@ export default async function Projetos() {
               </div>
             </div>
           </div> */}
-          <div className="max-w-[800px] columns-projects mx-auto">
-            {projectsSection.projects.map((project, index) => (
-              <Project key={index} project={project} />
-            ))}
-          </div>
+          <ProviderProjects />
         </div>
       </main>
     </>
